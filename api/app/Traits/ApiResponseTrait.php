@@ -33,4 +33,13 @@ trait ApiResponseTrait
             'data' => $data,
         ], $code);
     }
+
+    public static function apiForbiddenError($data, $message = "Invaild Data", $code = JsonResponse::HTTP_FORBIDDEN)
+    {
+        return response()->json([
+            'status' => false,
+            'message' => $message,
+            'data' => $data,
+        ], $code);
+    }
 }

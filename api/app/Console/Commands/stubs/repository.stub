@@ -25,10 +25,10 @@ class ClassName extends BaseRepository
      * @param  array  $inputs
      * @return int  the id of the saved resource
      */
-    protected function save(ModelName $model, Array $inputs)
+    protected function store(Array $data)
     {
         //[Save attributes]
-        $model->save();
-        return $model->dummy_id;
+        $this->model->create($data);
+        return $this->model;
     }
 }

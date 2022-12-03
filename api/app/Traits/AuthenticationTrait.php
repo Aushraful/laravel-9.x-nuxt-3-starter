@@ -24,12 +24,12 @@ trait AuthenticationTrait
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    protected function respondWithToken($token)
+    protected function respondWithToken($token, $ttl)
     {
         $data = [[
             'access_token'  => $token,
             'token_type'    => 'bearer',
-            'expires_in'    => $this->guard()->factory()->getTTL() * 60 * 24 * 30,
+            'expires_in'    => $ttl ?? config('app.JWT_TTL'),
             'user'          => $this->guard()->user()
         ]];
 

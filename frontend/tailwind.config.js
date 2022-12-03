@@ -1,17 +1,4 @@
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   content: [],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
-
-
-/** @type {import('tailwindcss/types').Config} */
-
-const defaultTheme = require('tailwindcss/defaultTheme')
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
   content: [
@@ -25,18 +12,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
-      },
-    },
+      // spacing: {
+      //   '128': '32rem',
+      //   '144': '36rem',
+      // },
+      // borderRadius: {
+      //   '4xl': '2rem',
+      // },
+      // fontFamily: {
+      //   sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
+      // },
+    }
   },
   variants: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/aspect-ratio'),
-  ],
+  plugins: [],
 }

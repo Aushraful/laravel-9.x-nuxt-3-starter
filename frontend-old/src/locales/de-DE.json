@@ -1,0 +1,34 @@
+{
+	"text-welcome-to": "Willkommen zu",
+
+	"text-settings": "Einstellungen",
+	"text-theme": "Théma",
+	"text-light": "Licht",
+	"text-dark": "Dunkel",
+	"text-system": "Systém",
+
+	"text-profile": "Profíl",
+	"text-register": "Anmelden",
+	"text-log-in": "Einloggen",
+	"text-log-out": "Aúsloggen",
+
+	"text-contact-us": "Kontaktiere uns",
+	"text-address": "Adrésse",
+
+	"text-helpful-links": "Nützliche Links",
+	"text-legal-notice": "Impressum",
+	"text-terms-and-conditions": "Geschäftsbedingungen",
+	"text-privacy-policy": "Datenschutz-Bestimmungen",
+	"text-support": "Die Unterstützung",
+	"text-cancellation-policy": "Stornierungsbedingungen",
+
+	"text-informations": "Informationen",
+	"text-about-us": "Über uns",
+	"text-blogs": "Blogs",
+	"text-testimonials": "Referenzen",
+
+	"text-services": "Dienstleistungen",
+	"our-products": "Unsere Produkte",
+
+	"text-all-rights-reserved": "Alle Rechte vorbehalten"
+}

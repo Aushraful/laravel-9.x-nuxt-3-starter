@@ -56,6 +56,8 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'frontend-url' => env('FRONTEND_URL', 'http://localhost:3000'),
+
     'asset_url' => env('ASSET_URL'),
 
     /*
@@ -142,6 +144,25 @@ return [
         'driver' => 'file',
         // 'store'  => 'redis',
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | JWT Configs
+    |--------------------------------------------------------------------------
+    |
+    */
+    'JWT_SECRET' => env('JWT_SECRET'),
+    'JWT_ALGO' => env('JWT_ALGO', 'HS256'),
+    'JWT_TTL' => env('JWT_TTL', '1440'),
+    'JWT_REMEMBER_TTL' => env('JWT_REMEMBER_TTL', '31536000'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | AUTH Configs
+    |--------------------------------------------------------------------------
+    |
+    */
+    'auth_verification_expire' => env('AUTH_VERIFICATION_EXPIRE', 60), // IN MINUTES,
 
     /*
     |--------------------------------------------------------------------------
