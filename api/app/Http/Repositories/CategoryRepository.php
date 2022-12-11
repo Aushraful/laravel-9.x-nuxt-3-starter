@@ -2,10 +2,10 @@
 
 namespace App\Http\Repositories;
 
-use App\Http\Repositories\BaseRepository;
+use App\Http\Repositories\TranslateRepository;
 use App\Models\Category;
 
-class CategoryRepository extends BaseRepository
+class CategoryRepository extends TranslateRepository
 {
     /**
      * Create a new repository instance.

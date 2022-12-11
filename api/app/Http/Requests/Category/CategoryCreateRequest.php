@@ -30,9 +30,9 @@ class CategoryCreateRequest extends FormRequest
         ];
 
         foreach (config('translatable.locales') as $locale) {
-            $rules[$locale . 'name'] = 'string';
-            $rules[$locale . 'slug'] = 'string';
-            $rules[$locale . 'description'] = 'string';
+            $rules[$locale . '.name'] = 'string';
+            $rules[$locale . '.slug'] = 'string';
+            $rules[$locale . '.description'] = 'string';
         }
 
         return $rules;

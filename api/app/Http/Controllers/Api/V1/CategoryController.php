@@ -38,7 +38,7 @@ class CategoryController extends Controller
 
         try {
 
-            return $this->repository->getTranslatedPaginated();
+            return $this->repository->getPaginated();
         } catch (\Exception $e) {
 
             return self::apiServerError($e->getMessage());
@@ -82,7 +82,7 @@ class CategoryController extends Controller
     {
         try {
 
-            // return $this->repository->findTranslatedBySlug($id);
+            return $this->repository->findTranslatedBySlug($id);
             return $this->repository->findByID($id);
         } catch (\Exception $e) {
 

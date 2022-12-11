@@ -48,10 +48,10 @@ abstract class BaseRepository
     /**
      * Get all translated items with pagination
      */
-    public function getTranslatedPaginated()
-    {
-        return $this->model->translatedIn($this->locale)->latest()->paginate($this->limit);
-    }
+    // public function getTranslatedPaginated()
+    // {
+    //     return $this->model->translatedIn($this->locale)->latest()->paginate($this->limit);
+    // }
 
     /**
      * Resource relative behavior for saving a record.
@@ -72,12 +72,12 @@ abstract class BaseRepository
      * @param  array  $data
      * @return model
      */
-    public function saveTranslated(array $data)
-    {
-        $this->model->create($data);
+    // public function saveTranslated(array $data)
+    // {
+    //     $this->model->create($data);
 
-        return $this->model->translatedIn($this->locale)->latest()->paginate($this->limit);
-    }
+    //     return $this->model->translatedIn($this->locale)->latest()->paginate($this->limit);
+    // }
 
     /**
      * Get specific item by id or fail
@@ -98,14 +98,14 @@ abstract class BaseRepository
      *
      * @return model
      */
-    public function findTranslatedBySlug($slug)
-    {
-        try {
-            return $this->model->whereTranslation('slug', $slug)->firstOrFail();
-        } catch (\Throwable $th) {
-            return Self::apiResponseError(NULL, 'Not Found!', Response::HTTP_NOT_FOUND);
-        }
-    }
+    // public function findTranslatedBySlug($slug)
+    // {
+    //     try {
+    //         return $this->model->whereTranslation('slug', $slug)->firstOrFail();
+    //     } catch (\Throwable $th) {
+    //         return Self::apiResponseError(NULL, 'Not Found!', Response::HTTP_NOT_FOUND);
+    //     }
+    // }
 
     /**
      * Resource relative behavior for updating a record.

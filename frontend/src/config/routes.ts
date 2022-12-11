@@ -7,10 +7,13 @@ export const Routes = {
 	resetPassword: '/reset-password',
 	profile: '/profile',
 	settings: '/settings',
+
+	dashboard: '/dashboard',
+
 	user: {
 		...routesFactory('/users'),
 	},
-	category: {
+	dashboard_category: {
 		...routesFactory('/categories'),
 	},
 	attribute: {

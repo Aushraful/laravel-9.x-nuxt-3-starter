@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full hidden md:block">
+	<div class="w-full hidden lg:block">
 		<div class="relative z-40 bg-white" role="dialog" aria-modal="true">
 			<LayoutsDashboardNavContent />
 		</div>

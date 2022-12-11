@@ -1,5 +1,5 @@
 <template>
-	<div class="md:hidden">
+	<div class="lg:hidden">
 		<div class="relative z-40 bg-white" role="dialog" aria-modal="true">
 			<div
 				class="fixed h-16 sm:h-20 flex items-center bg-white dark:bg-gray-800 justify-between w-screen top-0 p-3 sm:p-6 shadow"

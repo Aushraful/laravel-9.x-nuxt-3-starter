@@ -4,8 +4,8 @@
 			<nav class="px-2 space-y-1 text-xs">
 				<template v-for="item in navigation" :key="item.name">
 					<div v-if="!item.children">
-						<a
-							href="#"
+						<NuxtLink
+							:href="item.href"
 							:class="[
 								item.current ? 'bg-gray-200 dark:bg-gray-900' : '',
 								' text-black dark:text-white group w-full flex items-center px-2 py-2 font-medium rounded-md',
@@ -20,7 +20,7 @@
 								aria-hidden="true"
 							/>
 							{{ item.name }}
-						</a>
+						</NuxtLink>
 					</div>
 					<Disclosure as="div" v-else class="space-y-1" v-slot="{ open }">
 						<DisclosureButton
@@ -252,7 +252,20 @@
 	);
 
 	const navigation = [
-		{ name: "Home", icon: HomeIcon, current: true, href: "#", action: null },
+		{
+			name: "Home",
+			icon: HomeIcon,
+			current: true,
+			href: Routes.dashboard,
+			action: null,
+		},
+		{
+			name: "Category",
+			icon: HomeIcon,
+			current: false,
+			href: Routes.dashboard_category.list,
+			action: null,
+		},
 	];
 
 	const guest_navigation = [

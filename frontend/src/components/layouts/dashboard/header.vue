@@ -12,6 +12,12 @@
 					/>
 				</NuxtLink>
 				<div class="ml-4 flex items-center md:ml-6 space-x-3">
+					<div>
+						<div class="w-full flex items-center justify-end space-x-3">
+							<SiteSettingsLanguageChange class="" />
+							<SiteSettingsColorChange />
+						</div>
+					</div>
 					<!-- Profile dropdown -->
 					<Menu as="div" class="relative inline-block">
 						<div>
